@@ -103,6 +103,9 @@ login('ali123', 'Ali123456');
 function getProfilePicture(username) {
   return new Promise((resolve, reject) => {
     if (username == 'ali') {
+      const myName = username;
+      myName = 'check';
+
       resolve('ali.jpg');
     } else {
       reject('Sorry no profile picture found !');
